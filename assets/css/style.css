@@ -1,0 +1,149 @@
+body{
+    /* min-height: 100vh; */
+    min-height: 100vh;
+}
+
+main{
+    display: flex;
+    flex-wrap: nowrap;
+    height: 100%;
+    height: -webkit-fill-available;
+    /* max-height: 100vh; */
+    overflow-x: auto;
+    /* overflow-y: hidden; */
+}
+
+.sidebar{
+    /* width: 0; */
+    transform: translateX(-100%);
+    transition: all 300ms ease;
+    display: none;
+    /* opacity: 0; */
+    position: fixed;
+    height: 100%;
+    /* z-index: 1; */
+    overflow-y: scroll;
+}
+
+.sidebar.active{
+    /* left: 0; */
+    transform: translateX(0);
+    width: 280px;
+    z-index: 1;
+    /* opacity: 1; */
+}
+.nested{
+    padding: 0 3px;
+}
+.nested button{
+    color: #fff;
+    width: 100%;
+    text-align: left;
+    position: relative;
+}
+.nested button:hover{
+    color: inherit;
+}
+.nested button:hover,
+.nested button:active,
+.nested button:focus
+{
+    outline: 0;
+    box-shadow: none;
+}
+
+
+.main-wrapper{
+    width: 80vw;
+    position: relative;
+    left: 280px;
+}
+.main-wrapper.active{
+    left: 0;
+}
+.navbar-toggler{
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    border: 1px solid;
+    visibility: hidden;
+}
+.chart{
+    margin-bottom: 7rem;
+}
+button.active{
+    background-color: #0d6efd;
+    color: #fff;
+}
+.dashboard-card{
+    min-width: 200px;
+}
+.dashboard-icons{
+    font-size: 50px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    opacity: 0.4;
+}
+.btn-toggle .dropdown-icon{
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.btn-toggle.collapsed .dropdown-icon{
+    transform: rotateZ(-90deg);
+    transform-origin: center;
+    top: 20%;
+}
+
+
+
+.btn-toggle-nav li a.active{
+    background-color: rgba(255,255,255,.15) !important;
+}
+
+
+
+footer{
+    height: 100px;
+    position: relative;
+    left: 280px;
+    width: 80vw;
+}
+
+
+/* custom scroll  */
+
+*::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+*::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+}
+
+*::-webkit-scrollbar-thumb
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #666;
+}
+
+
+/* bootstrap overriding css  */
+
+.form-floating>label{
+    left: inherit;
+}
+
+
+/* ckeditor height */
+
+.ck-editor__editable_inline {
+    min-height: 160px;
+}
