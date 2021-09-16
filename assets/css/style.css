@@ -56,6 +56,7 @@ main{
     box-shadow: none;
 }
 
+
 .main-wrapper{
     width: 100%;
     position: relative;
@@ -66,10 +67,10 @@ main{
 .main-wrapper.active{
     padding-left: 10px;
 }
-.main-wrapper.active .navbar-toggler{
+.main-wrapper.active .navbar-toggler:not(.top-nav){
     left: 10px;
 }
-.navbar-toggler{
+.navbar-toggler:not(.top-nav){
     position: fixed;
     z-index: 2;
     top: 5px;
@@ -180,4 +181,15 @@ footer{
 
 .ck-editor__editable_inline {
     min-height: 160px;
+}
+
+
+/* top nav css  */
+
+.main-wrapper.top-nav{
+    padding-left: 0;
+}
+
+footer.top-nav{
+    left: 0;
 }
