@@ -26,9 +26,6 @@ let nav = `
         <div class="collapse ${(active == 'list' || active == 'create') && 'show'}" id="orders-collapse">
             <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small dropdown-menu-dark">
                 <li><a class="dropdown-item ${active == 'create' && 'active'}" href="./form-elements.html">Create</a></li>
-                <li>
-                    <a class="dropdown-item" href="#">Update</a>
-                </li>
                 <li><a class="dropdown-item ${active == 'list' && 'active'}" href="./table.html">List</a></li>
             </ul>
         </div>
@@ -82,6 +79,7 @@ const navbtn = document.getElementById('navbar-toggler');
 const sidebar = document.getElementById('sidebar');
 const mainwrapper = document.getElementById('main-wrapper');
 const footer = document.querySelector('footer');
+
 navbtn.addEventListener('click', () => {
     trigger()
 })

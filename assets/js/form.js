@@ -19,14 +19,14 @@
         })()
 
 
-        if(document.getElementById('editor').length > 0 ){
+        if(document.getElementById('editor')){
             ClassicEditor
             .create(document.querySelector('#editor'))
             .then(editor => {
-                console.log(editor);
+                // console.log(editor);
             })
             .catch(error => {
-                console.error(error);
+                // console.error(error);
             });
         }
 
