@@ -7,6 +7,10 @@
         width: 100vw;
         overflow-x: hidden;
     }
+
+    .dashboard-card{
+        min-width: 100%;
+    }
 }
 
 @media screen and (max-width: 1000px){
@@ -14,9 +18,7 @@
         overflow-x: hidden !important;
     }
 
-    .dashboard-card{
-        min-width: 180px;
-    }
+    
 }
 
 .navbar-toggler{
