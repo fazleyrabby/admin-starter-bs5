@@ -81,9 +81,11 @@ document.getElementById('sidebar').innerHTML = nav;
 const navbtn = document.getElementById('navbar-toggler');
 const sidebar = document.getElementById('sidebar');
 const mainwrapper = document.getElementById('main-wrapper');
+const footer = document.querySelector('footer');
 navbtn.addEventListener('click', () => {
     sidebar.classList.toggle('active');
     mainwrapper.classList.toggle('active');
+    footer.classList.toggle('active');
 })
 
 

@@ -133,10 +133,12 @@ footer{
     align-items: center;
     right: 0px;
     left: 280px;
-    width: 100%;
     background: #fefefe;
     margin-bottom: 0px;
     padding: 0 2rem;
+}
+footer.active{
+    left: 0;
 }
 .auth-card {
     width: 100vw;
