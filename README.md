@@ -10,3 +10,7 @@
 ### Tables & Datatables 
 
 ![tables](https://user-images.githubusercontent.com/26044286/133315177-b00a8e9c-5d87-4a7a-bf64-70c81128f4c2.PNG)
+
+### Profile
+
+![image](https://user-images.githubusercontent.com/26044286/133557552-e5365a5b-b0b6-4302-8bb0-b7a1a425235b.png)
