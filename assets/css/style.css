@@ -2,6 +2,7 @@ body{
     /* min-height: 100vh; */
     min-height: 100vh;
     background: #fafdfb;
+    margin-bottom: 50px;
 }
 
 main{
@@ -109,10 +110,22 @@ button.active{
 
 
 footer{
-    height: 100px;
+    /* height: 100px;
     position: relative;
     left: 280px;
     width: 80vw;
+    bottom: 0; */
+    position: fixed;
+    bottom: 0px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    right: 0px;
+    left: 280px;
+    width: 100%;
+    background: #fefefe;
+    margin-bottom: 0px;
+    padding: 0 2rem;
 }
 
 
