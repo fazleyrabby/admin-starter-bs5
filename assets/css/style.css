@@ -56,14 +56,15 @@ main{
     box-shadow: none;
 }
 
-
 .main-wrapper{
-    width: 80vw;
+    width: 100%;
     position: relative;
-    left: 280px;
+    padding-left: 290px;
+    padding-right: 30px;
+    padding-top: 50px;
 }
 .main-wrapper.active{
-    left: 0;
+    padding-left: 10px;
 }
 .main-wrapper.active .navbar-toggler{
     left: 10px;
