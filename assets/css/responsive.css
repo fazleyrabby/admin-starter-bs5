@@ -1,5 +1,20 @@
 @media screen and (max-width: 780px){
-    .navbar-toggler{
+    /* .navbar-toggler{
         visibility: visible;
+    } */
+
+    .main-wrapper{
+        width: 100vw;
+        overflow-x: hidden;
     }
+}
+
+@media screen and (max-width: 1000px){
+    body,main{
+        overflow-x: hidden !important;
+    }
+}
+
+.navbar-toggler{
+    visibility: visible;
 }

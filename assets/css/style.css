@@ -1,6 +1,7 @@
 body{
     /* min-height: 100vh; */
     min-height: 100vh;
+    background: #fafdfb;
 }
 
 main{
@@ -57,6 +58,7 @@ main{
     width: 80vw;
     position: relative;
     left: 280px;
+
 }
 .main-wrapper.active{
     left: 0;
