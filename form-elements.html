@@ -607,10 +607,16 @@
               <div id="editor">This is some sample content.</div>
             </div>
 
+            <h5>TinyMCE</h5>
+            <div class="mb-4">
+              <textarea id="mytextarea">Hello, World!</textarea>
+            </div>
+
             <h5>Dropzone</h5>
             <form action="/file-upload" class="dropzone" id="my-dropzone">
               <input type="file" name="file" />
             </form>
+
 
 
           </div>
@@ -644,6 +650,8 @@
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
   <script src="https://cdn.ckeditor.com/ckeditor5/29.2.0/classic/ckeditor.js"></script>
+  <script src="https://cdn.tiny.cloud/1/kww40lencijthwjxb8w44o1tihzdttcmquzss34mwt82ju4e/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+
   <script src="assets/plugins/dropzone/dropzone.js"></script>
   <script src="assets/js/form.js"></script>
 
@@ -680,6 +688,10 @@
       onAdjust: function(newVal, oldVal) {
         //...
       }
+    });
+
+    tinymce.init({
+        selector: '#mytextarea'
     });
   </script>
 
