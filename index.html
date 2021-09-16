@@ -18,127 +18,6 @@
 <body>
     <main>
         <div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark sidebar active" id="sidebar">
-            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
-                <span class="fs-4">Dashboard</span>
-            </a>
-            <hr>
-            <ul class="nav nav-pills flex-column mb-auto">
-
-                <li class="nav-item">
-                    <a href="./horizontal.html" class="nav-link text-white" aria-current="page">
-                        <i class="fas fa-home"></i>&nbsp;Top Navigation
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="./index.html" class="nav-link text-white active" aria-current="page">
-                        <i class="fas fa-home"></i>&nbsp;Home
-                    </a>
-                </li>
-                <li class="nested nav-item">
-                    <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
-                        data-bs-target="#orders-collapse" aria-expanded="false">
-                        <i class="fas fa-cog"></i>&nbsp;CRUD
-                        <span class="dropdown-icon"><i class="fas fa-sort-down"></i></span>
-                    </button>
-                    <div class="collapse" id="orders-collapse">
-                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small dropdown-menu-dark">
-                            <li><a class="dropdown-item" href="./form-elements.html">Create</a></li>
-                            <li>
-                                <a class="dropdown-item" href="#">Update</a>
-                            </li>
-                            <li><a class="dropdown-item" href="./table.html">List</a></li>
-                        </ul>
-                    </div>
-                </li>
-                <li>
-                    <a href="#" class="nav-link text-white">
-                        <i class="fas fa-cog"></i>
-                        Products
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="nav-link text-white">
-                        <i class="fas fa-users"></i>
-                        Customers
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#" class="nav-link text-white">
-                        <i class="fas fa-users"></i>
-                        Settings
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#" class="nav-link text-white">
-                        <i class="fas fa-users"></i>
-                        Blogs
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#" class="nav-link text-white">
-                        <i class="fas fa-cog"></i>
-                        Pages
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#" class="nav-link text-white">
-                        <i class="fas fa-cogs"></i>
-                        Site Settings
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="nav-link text-white">
-                        <i class="fas fa-cogs"></i>
-                        Options
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="nav-link text-white">
-                        <i class="fas fa-cogs"></i>
-                        Reports
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="nav-link text-white">
-                        <i class="fas fa-cogs"></i>
-                        Users
-                    </a>
-                </li>
-
-                <li>
-                    <a href="login.html" class="nav-link text-white">
-                        <i class="fas fa-cogs"></i>
-                        Login
-                    </a>
-                </li>
-
-                <li>
-                    <a href="register.html" class="nav-link text-white">
-                        <i class="fas fa-cogs"></i>
-                        Register
-                    </a>
-                </li>
-            </ul>
-            <hr>
-            <div class="dropdown">
-                <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
-                    id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
-                    <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
-                    <strong>User</strong>
-                </a>
-                <ul class="dropdown-menu dropdown-menu-dark text-small shadow active" aria-labelledby="dropdownUser1">
-                    <li><a class="dropdown-item active" href="./profile.html">Profile</a></li>
-                    <li><a class="dropdown-item" href="#">Settings</a></li>
-                    <li>
-                        <hr class="dropdown-divider">
-                    </li>
-                    <li><a class="dropdown-item" href="#">Sign out</a></li>
-                </ul>
-            </div>
         </div>
 
         <div class="main-wrapper d-flex" id="main-wrapper">
@@ -280,7 +159,7 @@
                     </div>
                 </div>
 
-                <div class="card-body">
+                <div class="card-body table-responsive">
                     <table id="example" class="table table-striped" style="width:100%">
                         <thead>
                             <tr>
@@ -425,6 +304,9 @@
 
 
 
+    <script> let active = 'home'; </script>
+    <script src="includes/nav.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
         crossorigin="anonymous"></script>
@@ -443,21 +325,12 @@
                 datasets: [{
                     label: '# of Votes',
                     data: [65, 59, 80, 81, 56, 55, 40, 55, 60,12, 33,66,44,77,88],
-                    fill: false,
-                    lineTension: 0,
-                    backgroundColor: 'transparent',
+                    fill: true,
+                    lineTension: 0.4,
+                    backgroundColor: '#007bff',
                     borderColor: '#007bff',
-                    borderWidth: 4,
+                    borderWidth: 3,
                     pointBackgroundColor: '#007bff',
-                    // backgroundColor: [
-                    //     'rgba(255, 99, 132, 0.2)',
-                    //     'rgba(54, 162, 235, 0.2)',
-                    //     'rgba(255, 206, 86, 0.2)',
-                    //     'rgba(75, 192, 192, 0.2)',
-                    //     'rgba(153, 102, 255, 0.2)',
-                    //     'rgba(255, 159, 64, 0.2)'
-                    // ],
-                    // borderWidth: 1
                 }]
             },
             options: {
@@ -468,6 +341,7 @@
                 }
             }
         });
+
 
         var ctx2 = document.getElementById('myChart2').getContext('2d');
         const data = {
@@ -570,15 +444,7 @@
         new Chart(donut, dconfig);
     </script>
 
-    <script>
-        const navbtn = document.getElementById('navbar-toggler');
-        const sidebar = document.getElementById('sidebar');
-        const mainwrapper = document.getElementById('main-wrapper');
-        navbtn.addEventListener('click', () => {
-            sidebar.classList.toggle('active');
-            mainwrapper.classList.toggle('active');
-        })
-    </script>
+    
 </body>
 
 </html>

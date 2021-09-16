@@ -77,7 +77,7 @@ main{
     left: 285px;
     background-color: #fff;
     border: 1px solid;
-    visibility: hidden;
+    /* visibility: hidden; */
 }
 .chart{
     margin-bottom: 7rem;
@@ -176,6 +176,10 @@ footer{
     left: inherit;
 }
 
+.clock-timepicker{
+    width: 100%;
+}
+
 
 /* ckeditor height */
 
@@ -196,3 +200,14 @@ footer.top-nav{
     left: 0;
 }
 
+
+
+/* reset fullcalender  */
+
+a.fc-daygrid-day-number,
+a.fc-col-header-cell-cushion,
+a.fc-daygrid-event
+{
+    color: inherit;
+    text-decoration: inherit;
+}

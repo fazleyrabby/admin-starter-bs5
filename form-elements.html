@@ -15,128 +15,15 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="assets/plugins/dropzone/dropzone.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.css">
+
 </head>
 
 <body>
   <main>
     <div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark sidebar active" id="sidebar">
-      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
-        <span class="fs-4">Dashboard</span>
-      </a>
-      <hr>
-      <ul class="nav nav-pills flex-column mb-auto">
-
-        <li class="nav-item">
-          <a href="./index.html" class="nav-link text-white" aria-current="page">
-            <i class="fas fa-home"></i>&nbsp;Home
-          </a>
-        </li>
-        <li class="nested nav-item">
-          <button class="btn btn-toggle align-items-center rounded active" data-bs-toggle="collapse"
-            data-bs-target="#orders-collapse" aria-expanded="false">
-            <i class="fas fa-cog"></i>&nbsp;CRUD
-            <span class="dropdown-icon"><i class="fas fa-sort-down"></i></span>
-          </button>
-
-          <div class="collapse show" id="orders-collapse">
-            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small dropdown-menu-dark">
-              <li><a class="dropdown-item active" href="./form-elements.html">Create</a></li>
-              <li>
-                <a class="dropdown-item" href="#">Update</a>
-              </li>
-              <li><a class="dropdown-item" href="./table.html">List</a></li>
-            </ul>
-          </div>
-        </li>
-        <li>
-          <a href="#" class="nav-link text-white">
-            <i class="fas fa-cog"></i>
-            Products
-          </a>
-        </li>
-        <li>
-          <a href="#" class="nav-link text-white">
-            <i class="fas fa-users"></i>
-            Customers
-          </a>
-        </li>
-
-        <li>
-          <a href="#" class="nav-link text-white">
-            <i class="fas fa-users"></i>
-            Settings
-          </a>
-        </li>
-
-        <li>
-          <a href="#" class="nav-link text-white">
-            <i class="fas fa-users"></i>
-            Blogs
-          </a>
-        </li>
-
-        <li>
-          <a href="#" class="nav-link text-white">
-            <i class="fas fa-cog"></i>
-            Pages
-          </a>
-        </li>
-
-        <li>
-          <a href="#" class="nav-link text-white">
-            <i class="fas fa-cogs"></i>
-            Site Settings
-          </a>
-        </li>
-        <li>
-          <a href="#" class="nav-link text-white">
-            <i class="fas fa-cogs"></i>
-            Options
-          </a>
-        </li>
-        <li>
-          <a href="#" class="nav-link text-white">
-            <i class="fas fa-cogs"></i>
-            Reports
-          </a>
-        </li>
-        <li>
-          <a href="#" class="nav-link text-white">
-            <i class="fas fa-cogs"></i>
-            Users
-          </a>
-        </li>
-
-        <li>
-          <a href="login.html" class="nav-link text-white">
-              <i class="fas fa-cogs"></i>
-              Login
-          </a>
-      </li>
-
-      <li>
-          <a href="register.html" class="nav-link text-white">
-              <i class="fas fa-cogs"></i>
-              Register
-          </a>
-      </li>
-      </ul>
-      <hr>
-      <div class="dropdown">
-        <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1"
-          data-bs-toggle="dropdown" aria-expanded="false">
-          <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
-          <strong>User</strong>
-        </a>
-        <ul class="dropdown-menu dropdown-menu-dark text-small shadow active" aria-labelledby="dropdownUser1">
-          <li><a class="dropdown-item active" href="./profile.html">Profile</a></li>
-          <li><a class="dropdown-item" href="#">Settings</a></li>
-          <li>
-            <hr class="dropdown-divider">
-          </li>
-          <li><a class="dropdown-item" href="#">Sign out</a></li>
-        </ul>
-      </div>
     </div>
 
     <div class="main-wrapper d-flex" id="main-wrapper">
@@ -151,7 +38,7 @@
           </ol>
         </nav>
 
-        
+
 
         <div class="card">
           <div class="card-header">
@@ -163,12 +50,12 @@
                 <label for="exampleFormControlInput1" class="form-label">Email address</label>
                 <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
               </div>
-  
+
               <div class="mb-3">
                 <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
               </div>
-  
+
               <div class="mb-3">
                 <label for="formFile" class="form-label">Default file input example</label>
                 <input class="form-control" type="file" id="formFile">
@@ -178,7 +65,7 @@
                 <input class="form-control" type="file" id="formFileMultiple" multiple>
               </div>
             </form>
-  
+
             <form class="row g-3 mb-2">
               <h5 for="">Input Groups</h5>
               <div class="input-group mb-3">
@@ -191,7 +78,7 @@
                   aria-label="Recipient's username" aria-describedby="basic-addon2">
                 <span class="input-group-text" id="basic-addon2">@example.com</span>
               </div>
-  
+
               <h5 for="">Input Groups (With Checkbox/Radios)</h5>
               <div class="input-group mb-3">
                 <div class="input-group-text">
@@ -200,7 +87,7 @@
                 </div>
                 <input type="text" class="form-control" aria-label="Text input with checkbox">
               </div>
-  
+
               <div class="input-group">
                 <div class="input-group-text">
                   <input class="form-check-input mt-0" type="radio" value=""
@@ -208,7 +95,7 @@
                 </div>
                 <input type="text" class="form-control" aria-label="Text input with radio button">
               </div>
-  
+
               <h5>With Dropdown</h5>
               <div class="input-group mb-3">
                 <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
@@ -224,7 +111,7 @@
                 </ul>
                 <input type="text" class="form-control" aria-label="Text input with dropdown button">
               </div>
-  
+
               <div class="input-group mb-3">
                 <input type="text" class="form-control" aria-label="Text input with dropdown button">
                 <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
@@ -239,7 +126,7 @@
                   <li><a class="dropdown-item" href="#">Separated link</a></li>
                 </ul>
               </div>
-  
+
               <h5>With Select</h5>
               <div class="input-group mb-3">
                 <label class="input-group-text" for="inputGroupSelect01">Options</label>
@@ -250,7 +137,7 @@
                   <option value="3">Three</option>
                 </select>
               </div>
-  
+
               <div class="input-group mb-3">
                 <select class="form-select" id="inputGroupSelect02">
                   <option selected>Choose...</option>
@@ -260,7 +147,7 @@
                 </select>
                 <label class="input-group-text" for="inputGroupSelect02">Options</label>
               </div>
-  
+
               <h5>Select Options</h5>
               <div>
                 <select class="form-select" aria-label="Default select example">
@@ -270,7 +157,7 @@
                   <option value="3">Three</option>
                 </select>
               </div>
-  
+
               <h5>Checkbox</h5>
               <div>
                 <div class="form-check">
@@ -301,7 +188,7 @@
                   <label class="form-check-label" for="inlineCheckbox3">3 (disabled)</label>
                 </div>
               </div>
-  
+
               <h5>Radios</h5>
               <div>
                 <div class="form-check">
@@ -317,7 +204,7 @@
                   </label>
                 </div>
               </div>
-  
+
               <div>
                 <h5>Inline</h5>
                 <div class="form-check form-check-inline">
@@ -331,8 +218,8 @@
                   <label class="form-check-label" for="inlineRadio2">2</label>
                 </div>
                 <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"
-                    disabled>
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
+                    value="option3" disabled>
                   <label class="form-check-label" for="inlineRadio3">3 (disabled)</label>
                 </div>
               </div>
@@ -356,10 +243,10 @@
                     input</label>
                 </div>
               </div>
-  
-  
+
+
             </form>
-  
+
             <form class="row g-3 mb-4">
               <h5>Floating Label</h5>
               <div class="form-floating mb-3">
@@ -375,7 +262,7 @@
                   placeholder="name@example.com" value="test@example.com">
                 <label for="floatingInputInvalid">Invalid input</label>
               </div>
-  
+
               <div class="form-floating">
                 <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
                   style="height: 100px"></textarea>
@@ -390,12 +277,12 @@
                 </select>
                 <label for="floatingSelect">Works with selects</label>
               </div>
-  
+
               <div>
                 <label for="customRange1" class="form-label">Example range</label>
                 <input type="range" class="form-range" id="customRange1">
               </div>
-  
+
             </form>
             <h5>Complex layout</h5>
             <hr>
@@ -443,7 +330,7 @@
                 <button type="submit" class="btn btn-primary">Sign in</button>
               </div>
             </form>
-  
+
             <h5>Horizontal Form</h5>
             <hr>
             <form class="mb-4">
@@ -496,9 +383,9 @@
               </div>
               <button type="submit" class="btn btn-primary">Sign in</button>
             </form>
-  
+
             <h5>Inline Forms</h5>
-  
+
             <form class="row row-cols-lg-auto g-3 align-items-center mb-4">
               <div class="col-12">
                 <label class="visually-hidden" for="inlineFormInputGroupUsername">Username</label>
@@ -507,7 +394,7 @@
                   <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Username">
                 </div>
               </div>
-  
+
               <div class="col-12">
                 <label class="visually-hidden" for="inlineFormSelectPref">Preference</label>
                 <select class="form-select" id="inlineFormSelectPref">
@@ -517,7 +404,7 @@
                   <option value="3">Three</option>
                 </select>
               </div>
-  
+
               <div class="col-12">
                 <div class="form-check">
                   <input class="form-check-input" type="checkbox" id="inlineFormCheck">
@@ -526,12 +413,12 @@
                   </label>
                 </div>
               </div>
-  
+
               <div class="col-12">
                 <button type="submit" class="btn btn-primary">Submit</button>
               </div>
             </form>
-  
+
             <h5>Form with Validations</h5>
             <hr>
             <form class="row g-3 needs-validation mb-4" novalidate>
@@ -599,8 +486,8 @@
                 <button class="btn btn-primary" type="submit">Submit form</button>
               </div>
             </form>
-  
-  
+
+
             <h5>Validation with Tooltips</h5>
             <hr>
             <form class="row g-3 needs-validation mb-4" novalidate>
@@ -668,37 +555,67 @@
                 Loading...
               </button>
             </div>
-  
+
             <h5>Select2 -- single</h5>
             <div class="mb-4">
-              <select class="select2 form-control" name="state">
+              <select class="select2 form-control w-100" name="state">
                 <option value="AL">Alabama</option>
                 ...
                 <option value="WY">Wyoming</option>
               </select>
             </div>
-  
+
             <h5>Select2 -- multiple</h5>
             <div class="mb-4">
-              <select class="select2 form-control" name="state" multiple="multiple">
+              <select class="select2 form-control w-100" name="state" multiple="multiple">
                 <option value="AL">Alabama</option>
                 ...
                 <option value="WY">Wyoming</option>
               </select>
             </div>
+
+            <div class="row mb-4">
+              <div class="col-md-6 col-12">
+                <h5>Datepicker Default</h5>
+                <input type="date" name="date" class="form-control" value="01/01/2018 - 01/15/2018" />
+              </div>
+
+              <div class="col-md-6 col-12">
+                <h5>Datepicker (Daterange picker)</h5>
+                <input type="text" name="daterange" class="form-control" value="01/01/2018 - 01/15/2018" />
+              </div>
+            </div>
+
+            <div class="row mb-4">
+              <div class="col-md-6 col-12">
+                <h5>Timepicker <small>(timepicker.co)</small></h5>
+                <input class="timepicker timepicker-with-dropdown form-control">
+              </div>
   
+              <div class="col-md-6 col-12">
+                <h5>Timepicker (Jquery Clock Timepicker)</h5>
+  
+                <input class="time form-control w-100" type="text" data-precision="5" data-minimum="10:00" data-maximum="20:00" />
+              </div>
+            </div>
+
+
+
+
             <h5>CKEditor 5</h5>
             <div class="mb-4">
               <div id="editor">This is some sample content.</div>
             </div>
-  
+
             <h5>Dropzone</h5>
             <form action="/file-upload" class="dropzone" id="my-dropzone">
               <input type="file" name="file" />
             </form>
+
+
           </div>
-          
-          
+
+
         </div>
       </div>
     </div>
@@ -713,31 +630,23 @@
 
 
 
+  <script> let active = 'create';</script>
+  <script src="includes/nav.js"></script>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
     crossorigin="anonymous"></script>
 
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery-clock-timepicker@2.4.0/jquery-clock-timepicker.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
   <script src="https://cdn.ckeditor.com/ckeditor5/29.2.0/classic/ckeditor.js"></script>
   <script src="assets/plugins/dropzone/dropzone.js"></script>
-  <script>
-    $(document).ready(function () {
-      $('.select2').select2();
-    });
-  </script>
+  <script src="assets/js/form.js"></script>
 
-  <script>
-    ClassicEditor
-      .create(document.querySelector('#editor'))
-      .then(editor => {
-        console.log(editor);
-      })
-      .catch(error => {
-        console.error(error);
-      });
-  </script>
 
   <script>
     // Note that the name "myDropzone" is the camelized
@@ -749,40 +658,34 @@
         });
       }
     };
+
+    $('input[name="daterange"]').daterangepicker();
+
+    $('input.timepicker').timepicker({
+      timeFormat: 'h:mm p',
+      defaultTime: new Date().toLocaleTimeString(),
+      interval: 60,
+      dropdown: true,
+      scrollbar: true
+    });
+
+    $('.time').clockTimePicker({
+      alwaysSelectHoursFirst: true,
+      duration: true,
+      durationNegative: true,
+      precision: 5,
+      i18n: {
+        cancelButton: 'Abbrechen'
+      },
+      onAdjust: function(newVal, oldVal) {
+        //...
+      }
+    });
   </script>
 
-  <script>
-    const navbtn = document.getElementById('navbar-toggler');
-    const sidebar = document.getElementById('sidebar');
-    const mainwrapper = document.getElementById('main-wrapper');
-    navbtn.addEventListener('click', () => {
-      sidebar.classList.toggle('active');
-      mainwrapper.classList.toggle('active');
-    })
-  </script>
 
 
-  <script>
-      // Example starter JavaScript for disabling form submissions if there are invalid fields
-      (function () {
-        'use strict'
 
-        // Fetch all the forms we want to apply custom Bootstrap validation styles to
-        var forms = document.querySelectorAll('.needs-validation')
-
-        // Loop over them and prevent submission
-        Array.prototype.slice.call(forms)
-          .forEach(function (form) {
-            form.addEventListener('submit', function (event) {
-              if (!form.checkValidity()) {
-                event.preventDefault()
-                event.stopPropagation()
-              }
-              form.classList.add('was-validated')
-            }, false)
-          })
-      })()
-  </script>
 </body>
 
 </html>
