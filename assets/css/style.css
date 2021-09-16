@@ -127,7 +127,15 @@ footer{
     margin-bottom: 0px;
     padding: 0 2rem;
 }
-
+.auth-card {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin-top: 10rem;
+}
+.auth-card .card{
+    max-width: 500px;
+}
 
 /* custom scroll  */
 
@@ -148,6 +156,7 @@ footer{
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
 	background-color: #666;
 }
+
 
 
 /* bootstrap overriding css  */
