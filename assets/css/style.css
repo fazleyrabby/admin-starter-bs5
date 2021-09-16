@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;300;400;700&family=Nunito:wght@200;400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
 body{
     /* min-height: 100vh; */
     min-height: 100vh;
@@ -118,7 +119,25 @@ button.active{
     background-color: rgba(255,255,255,.15) !important;
 }
 
+code{
+    font-family: 'IBM Plex Mono', monospace;
+    color: #d5e20c;
+    background-color: #111;
+    padding: 1rem;
+    font-size: 105%;
+    width: 100%;
+    display: block;
+}
 
+.installation{
+    position: relative;
+}
+.installation button{
+    position: absolute;
+    top: 50%;
+    right: 0.75rem;
+    transform: translateY(-50%);
+}
 
 footer{
     /* height: 100px;
@@ -136,6 +155,8 @@ footer{
     background: #fefefe;
     margin-bottom: 0px;
     padding: 0 2rem;
+    width: 100%;
+    z-index: 1;
 }
 footer.active{
     left: 0;

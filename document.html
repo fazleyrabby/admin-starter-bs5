@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <main>
+        <div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark sidebar active" id="sidebar">
+        </div>
+
+        <div class="main-wrapper d-flex" id="main-wrapper">
+            <span class="navbar-toggler bg-dark text-white" id="navbar-toggler" type="button">
+                <i class="fas fa-bars"></i>
+            </span>
+            <div class="container">
+
+                <h3> Installation / Download </h3>
+
+                
+                <div class="card">
+                    <div class="card-header"><h5>Github Repository</h5></div>
+                    <div class="card-body">
+                        <p>Copy this link and clone into your project folder: </p>
+                        <div class="installation mb-4">
+                            <code id="githubLink">
+                                https://github.com/fazleyrabby/admin-starter-bs5.git
+                            </code>
+                            <button class="btn btn-light" id="copyBtn">
+                                <i class="far fa-copy"></i>
+                            </button>
+                        </div>
+                        <p>You can also download this repository as <strong>ZIP</strong> file: &nbsp;<a href="https://github.com/fazleyrabby/admin-starter-bs5/archive/refs/heads/master.zip" class="btn btn-warning">
+                            <i class="fas fa-download"></i>
+                                Download
+                            </a> </p>
+                            <small class="text-danger">PS: This is completely free to download, You can modify it as you need.</small>
+                            <div class="position-fixed top-0 end-0 p-3" style="z-index: 11">
+                                <div id="liveToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
+                                <div class="toast-header">
+                                    <i class="fas fa-check-circle me-2 status"></i>
+                                    <strong class="me-auto" id="type"></strong>
+                                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                                </div>
+                                <div class="toast-body">
+                                </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            
+
+
+        </div>
+
+        </div>
+    </main>
+    
+
+    <footer>
+        Fazley Rabbi &copy; 2021
+    </footer>
+
+
+    
+
+
+    <script> let active = 'document';</script>
+    <script src="includes/nav.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+
+    <script src="assets/js/utlis.js"></script>
+    <script>
+        // copyToClipboard(button, copyfrom, toast(id, message, type)) //
+        copyToClipboard('copyBtn', 'githubLink', () => toast('#liveToast', 'Successfully Copied', 'success', {animation: true}))
+    </script>
+
+</body>
+
+</html>

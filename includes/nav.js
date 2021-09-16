@@ -1,5 +1,3 @@
-
-
 let nav = `
 <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
     <span class="fs-4">Dashboard</span>
@@ -53,8 +51,14 @@ let nav = `
         </a>
     </li>
 </ul>
+<div>
+<a href="document.html" target="_blank" class="rounded nav-link text-white bg-secondary">
+<i class="fas fa-download"></i>
+    Installation
+</a>
+</div>
 <hr>
-<div class="dropdown">
+<div class="dropdown mb-4">
     <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
         id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
         <img src="https://avatars.githubusercontent.com/u/26044286?v=4" alt="" width="32" height="32" class="rounded-circle me-2">
@@ -68,8 +72,7 @@ let nav = `
         </li>
         <li><a class="dropdown-item" href="#">Sign out</a></li>
     </ul>
-</div>
-`
+</div>`
 
 
 document.getElementById('sidebar').innerHTML = nav;
