@@ -71,6 +71,7 @@ main{
 }
 .navbar-toggler{
     position: fixed;
+    z-index: 2;
     top: 5px;
     left: 285px;
     background-color: #fff;
