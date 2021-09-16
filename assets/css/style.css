@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;300;400;700&family=Nunito:wght@200;400;700;800&display=swap');
 body{
     /* min-height: 100vh; */
     min-height: 100vh;
     background: #fafdfb;
     margin-bottom: 50px;
+    font-family: 'Fira Sans', sans-serif;
 }
 
 main{
@@ -59,15 +61,17 @@ main{
     width: 80vw;
     position: relative;
     left: 280px;
-
 }
 .main-wrapper.active{
     left: 0;
 }
+.main-wrapper.active .navbar-toggler{
+    left: 10px;
+}
 .navbar-toggler{
     position: fixed;
-    top: 0;
-    right: 0;
+    top: 5px;
+    left: 285px;
     background-color: #fff;
     border: 1px solid;
     visibility: hidden;
@@ -80,7 +84,11 @@ button.active{
     color: #fff;
 }
 .dashboard-card{
-    min-width: 200px;
+    min-width: 220px;
+}
+.dashboard-card .card-text{
+    font-size: 22px;
+    font-weight: 600;
 }
 .dashboard-icons{
     font-size: 50px;
