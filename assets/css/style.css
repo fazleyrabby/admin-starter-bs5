@@ -65,7 +65,7 @@ main{
     padding-top: 50px;
 }
 .main-wrapper.active{
-    padding-left: 10px;
+    padding-left: 0;
 }
 .main-wrapper.active .navbar-toggler:not(.top-nav){
     left: 10px;
