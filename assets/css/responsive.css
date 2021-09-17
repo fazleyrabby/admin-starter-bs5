@@ -1,30 +1,30 @@
-@media screen and (max-width: 780px){
-    /* .navbar-toggler{
+@media screen and (max-width: 780px) {
+  /* .navbar-toggler{
         visibility: visible;
     } */
 
-    .main-wrapper{
-        width: 100vw;
-        overflow-x: hidden;
-    }
+  .main-wrapper {
+    width: 100vw;
+    overflow-x: hidden;
+  }
 
-    .dashboard-card{
-        min-width: 100%;
-    }
+  .dashboard-card {
+    min-width: 100%;
+  }
 
-    .main-wrapper{
-        padding-right: 0;
-    }
+  .main-wrapper {
+    padding-right: 0;
+    padding-left: 0;
+  }
 }
 
-@media screen and (max-width: 1000px){
-    body,main{
-        overflow-x: hidden !important;
-    }
-
-    
+@media screen and (max-width: 1000px) {
+  body,
+  main {
+    overflow-x: hidden !important;
+  }
 }
 
-.navbar-toggler{
-    visibility: visible;
-}
+/* .navbar-toggler {
+  visibility: visible;
+} */
