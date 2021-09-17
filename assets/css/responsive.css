@@ -12,7 +12,9 @@
     min-width: 100%;
   }
 
-  .main-wrapper {
+  .main-wrapper,
+  .main-wrapper.active
+  {
     padding-right: 0;
     padding-left: 0;
   }
