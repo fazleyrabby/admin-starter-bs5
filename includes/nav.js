@@ -18,13 +18,13 @@ let nav = `
     <li class="nested nav-item">
         <button class="btn btn-toggle align-items-center rounded ${(active == 'list' || active == 'create') && 'active'}" data-bs-toggle="collapse"
             data-bs-target="#orders-collapse" aria-expanded="true">
-            <i class="fas fa-cog"></i>&nbsp;CRUD
+            <i class="fas fa-cog"></i>&nbsp;Modules
             <span class="dropdown-icon"><i class="fas fa-sort-down"></i></span>
         </button>
         <div class="collapse ${(active == 'list' || active == 'create') && 'show'}" id="orders-collapse">
             <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small dropdown-menu-dark">
-                <li><a class="dropdown-item ${active == 'create' && 'active'}" href="./form-elements.html">Create</a></li>
-                <li><a class="dropdown-item ${active == 'list' && 'active'}" href="./table.html">List</a></li>
+                <li><a class="dropdown-item ${active == 'create' && 'active'}" href="./form-elements.html">Form Elements</a></li>
+                <li><a class="dropdown-item ${active == 'list' && 'active'}" href="./table.html">Tables</a></li>
             </ul>
         </div>
     </li>
