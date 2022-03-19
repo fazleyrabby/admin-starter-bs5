@@ -4,7 +4,7 @@ body{
     min-height: 100vh;
     background: #fafdfb;
     margin-bottom: 50px;
-    font-family: 'Sofia Pro','Futura Std','GT Walsheim Pro', 'Fira Sans', sans-serif;
+    font-family: system-ui,'segoe ui','Sofia Pro','Futura Std','GT Walsheim Pro', 'Fira Sans', sans-serif;
 }
 
 main{
